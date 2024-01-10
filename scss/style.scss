@@ -1,11 +1,9 @@
 @import "_fonts";
-html {
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-}
+@import "_normalize";
+
 .container {
+    display: flex;
+    flex-direction: column;
     max-width: 940px;
     margin: 0 auto;
 }

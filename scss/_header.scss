@@ -1,8 +1,11 @@
-.header {
+header {
     background-image: url(/img/bg.webp);
-    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+
+    .container {
+        align-items: center;
+    }
 }
 
 .header__content {
@@ -11,20 +14,48 @@
     flex-wrap: nowrap;
 
     h1 {
-        text-align: center;
+        text-transform: uppercase;
         font-family: "Bebas Neue";
         font-weight: 400;
         font-style: normal;
         font-size: 60px;
         letter-spacing: 5.709px;
         color: white;
-        padding-top: 257px;
+        padding-top: 314px;
+        margin: 0;
+    }
+
+    h2 {
+        letter-spacing: 1px;
+        padding-top: 6px;
+        color: #fff;
+        text-align: center;
+        font-family: OpenSans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        margin: 0;
     }
 }
 
 .header__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 41px;
+    background-image: url(/img/logo.svg);
+    background-repeat: no-repeat;
+    height: 23px;
+    width: 101.62px;
+    margin-top: 41px;
+}
+
+.header__scroll {
+    padding-top: 226px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-family: OpenSans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 3.7px;
+    margin-bottom: 70px;
 }
