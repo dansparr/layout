@@ -160,7 +160,7 @@ svg * {
 }
 
 header {
-  background-image: url(/img/bg.webp);
+  background-image: url(../img/bg.webp);
   background-size: cover;
   background-position: bottom;
   width: 100%;
@@ -198,7 +198,7 @@ header .container {
 }
 
 .header__logo {
-  background-image: url(/img/logo.svg);
+  background-image: url(../img/logo.svg);
   background-repeat: no-repeat;
   height: 23px;
   width: 101.62px;
@@ -228,7 +228,7 @@ nav .container {
 }
 
 .nav__logo {
-  background-image: url(/img/logo-black.svg);
+  background-image: url(../img/logo-black.svg);
   background-repeat: no-repeat;
   height: 18px;
   width: 79.53px;
@@ -441,7 +441,7 @@ nav .container {
   background-position: left;
   background-repeat: no-repeat;
   background-color: #fff;
-  background-image: url(/img/c1.jpg);
+  background-image: url(../img/c1.jpg);
 }
 .services__infographics-card-img_2 {
   width: 70px;
@@ -450,7 +450,7 @@ nav .container {
   background-position: left;
   background-repeat: no-repeat;
   background-color: #fff;
-  background-image: url(/img/c2.jpg);
+  background-image: url(../img/c2.jpg);
 }
 .services__infographics-card-img_3 {
   width: 70px;
@@ -459,5 +459,5 @@ nav .container {
   background-position: left;
   background-repeat: no-repeat;
   background-color: #fff;
-  background-image: url(/img/c3.jpg);
+  background-image: url(../img/c3.jpg);
 }

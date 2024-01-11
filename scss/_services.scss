@@ -92,15 +92,15 @@
             }
             &-img_1 {
                 @include imgParam();
-                background-image: url(/img/c1.jpg);
+                background-image: url(../img/c1.jpg);
             }
             &-img_2 {
                 @include imgParam();
-                background-image: url(/img/c2.jpg);
+                background-image: url(../img/c2.jpg);
             }
             &-img_3 {
                 @include imgParam();
-                background-image: url(/img/c3.jpg);
+                background-image: url(../img/c3.jpg);
             }
         }
     }
