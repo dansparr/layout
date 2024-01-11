@@ -1,0 +1,107 @@
+.services {
+    padding-top: 115px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+        &-title {
+            min-width: 200px;
+            color: #48555b;
+            font-family: "Open Sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2.306px;
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            &-line {
+                width: 50px;
+                height: 2px;
+                background-color: #00a4e5;
+            }
+        }
+        &-text {
+            color: #48555b;
+            font-family: "Open Sans";
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0.2px;
+            padding-left: 100px;
+        }
+        &-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            min-width: 150px;
+            background-color: #00a4e5;
+            color: #fff;
+        }
+    }
+    &__infographics {
+        padding-top: 75px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        // Карточки
+        &-card {
+            padding: 45px 20px;
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: 330px;
+            border: 1px solid #e6e6e6;
+            background: #fff;
+
+            &-title {
+                padding-top: 25px;
+                margin-bottom: 15px;
+                color: #48555b;
+                font-family: "Open Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0.427px;
+            }
+            &-text {
+                color: #48555b;
+                font-family: "Open Sans";
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 23px; /* 176.923% */
+                letter-spacing: 0.188px;
+            }
+
+            // Модификаторы изображений в карточках
+            @mixin imgParam {
+                width: 70px;
+                height: 75px;
+                background-size: contain;
+                background-position: left;
+                background-repeat: no-repeat;
+                background-color: #fff;
+            }
+            &-img_1 {
+                @include imgParam();
+                background-image: url(/img/c1.jpg);
+            }
+            &-img_2 {
+                @include imgParam();
+                background-image: url(/img/c2.jpg);
+            }
+            &-img_3 {
+                @include imgParam();
+                background-image: url(/img/c3.jpg);
+            }
+        }
+    }
+}
