@@ -1,0 +1,87 @@
+@mixin imgFrame {
+    // Рамка
+    width: 140px;
+    height: 224px;
+    margin-left: 20px;
+    background-color: #00a4e5;
+    padding: 20px;
+
+    // Шрифт
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 29px;
+    letter-spacing: 0.188px;
+    text-transform: uppercase;
+}
+.about {
+    padding-top: 60px;
+
+    &__h1 {
+        color: #48555b;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.306px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__line {
+        align-self: center;
+        width: 50px;
+        height: 2px;
+        background-color: #00a4e5;
+    }
+
+    &__content {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__text-block {
+        max-width: 460px;
+    }
+    &__text-1 {
+        color: #48555b;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.188px;
+    }
+    &__text-2 {
+        padding-top: 30px;
+        color: #48555b;
+        font-family: "Open Sans";
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.188px;
+    }
+    &__img-block {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 480px;
+    }
+    &__img-1 {
+        @include imgFrame();
+        background-image: url(/img/plan.jpg);
+    }
+    &__img-2 {
+        @include imgFrame();
+        background-image: url(/img/manage.jpg);
+    }
+    &__img-3 {
+        @include imgFrame();
+        background-image: url(/img/build.jpg);
+    }
+}

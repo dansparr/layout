@@ -48,27 +48,24 @@
 }
 
 /**
-   Убираем внутренние отступы слева тегам списков,
-   у которых есть атрибут class
-  */
-:where(ul, ol):where([class]) {
-  padding-left: 0;
-}
-
-/**
-   Убираем внешние отступы body и двум другим тегам,
-   у которых есть атрибут class
+   Убираем внешние отступы body и двум другим тегам
   */
 body,
-:where(blockquote, figure):where([class]) {
+:where(blockquote, figure) {
   margin: 0;
 }
 
 /**
-   Убираем внешние отступы вертикали нужным тегам,
-   у которых есть атрибут class
+   Убираем внутренние отступы слева тегам списков
   */
-:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
+:where(ul, ol) {
+  padding-left: 0;
+}
+
+/**
+   Убираем внешние отступы вертикали нужным тегам
+  */
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl) {
   margin-block: 0;
 }
 
@@ -77,10 +74,9 @@ body,
 }
 
 /**
-   Убираем стандартный маркер маркированному списку,
-   у которого есть атрибут class
+   Убираем стандартный маркер маркированному списку
   */
-:where(ul[class]) {
+:where(ul) {
   list-style: none;
 }
 
@@ -166,6 +162,7 @@ svg * {
 header {
   background-image: url(/img/bg.webp);
   background-size: cover;
+  background-position: bottom;
   width: 100%;
 }
 header .container {
@@ -193,7 +190,7 @@ header .container {
   padding-top: 6px;
   color: #fff;
   text-align: center;
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -213,11 +210,254 @@ header .container {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  font-family: OpenSans;
+  font-family: "Open Sans";
   font-size: 11px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 3.7px;
   margin-bottom: 70px;
+}
+
+nav .container {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  background-image: url(/img/logo-black.svg);
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 79.53px;
+}
+
+.nav__menu li {
+  display: inline;
+  margin-left: 30px;
+  text-transform: uppercase;
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.091px;
+  cursor: pointer;
+}
+.nav__menu li:hover {
+  color: #00a4e5;
+}
+
+.about {
+  padding-top: 60px;
+}
+.about__h1 {
+  color: #48555b;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.306px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.about__line {
+  align-self: center;
+  width: 50px;
+  height: 2px;
+  background-color: #00a4e5;
+}
+.about__content {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about__text-block {
+  max-width: 460px;
+}
+.about__text-1 {
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.188px;
+}
+.about__text-2 {
+  padding-top: 30px;
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.188px;
+}
+.about__img-block {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 480px;
+}
+.about__img-1 {
+  width: 140px;
+  height: 224px;
+  margin-left: 20px;
+  background-color: #00a4e5;
+  padding: 20px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0.188px;
+  text-transform: uppercase;
+  background-image: url(/img/plan.jpg);
+}
+.about__img-2 {
+  width: 140px;
+  height: 224px;
+  margin-left: 20px;
+  background-color: #00a4e5;
+  padding: 20px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0.188px;
+  text-transform: uppercase;
+  background-image: url(/img/manage.jpg);
+}
+.about__img-3 {
+  width: 140px;
+  height: 224px;
+  margin-left: 20px;
+  background-color: #00a4e5;
+  padding: 20px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 29px;
+  letter-spacing: 0.188px;
+  text-transform: uppercase;
+  background-image: url(/img/build.jpg);
+}
+
+.services {
+  padding-top: 115px;
+}
+.services__header {
+  display: flex;
+  justify-content: space-between;
+}
+.services__header-title {
+  min-width: 200px;
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.306px;
+}
+.services__header-title p {
+  margin-bottom: 10px;
+}
+.services__header-title-line {
+  width: 50px;
+  height: 2px;
+  background-color: #00a4e5;
+}
+.services__header-text {
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  padding-left: 100px;
+}
+.services__header-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  min-width: 150px;
+  background-color: #00a4e5;
+  color: #fff;
+}
+.services__infographics {
+  padding-top: 75px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.services__infographics-card {
+  padding: 45px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 330px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+}
+.services__infographics-card-title {
+  padding-top: 25px;
+  margin-bottom: 15px;
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.427px;
+}
+.services__infographics-card-text {
+  color: #48555b;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px; /* 176.923% */
+  letter-spacing: 0.188px;
+}
+.services__infographics-card-img_1 {
+  width: 70px;
+  height: 75px;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-image: url(/img/c1.jpg);
+}
+.services__infographics-card-img_2 {
+  width: 70px;
+  height: 75px;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-image: url(/img/c2.jpg);
+}
+.services__infographics-card-img_3 {
+  width: 70px;
+  height: 75px;
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-image: url(/img/c3.jpg);
 }

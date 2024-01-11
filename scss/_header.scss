@@ -1,6 +1,7 @@
 header {
     background-image: url(/img/bg.webp);
     background-size: cover;
+    background-position: bottom;
     width: 100%;
 
     .container {
@@ -30,7 +31,7 @@ header {
         padding-top: 6px;
         color: #fff;
         text-align: center;
-        font-family: OpenSans;
+        font-family: "Open Sans";
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
@@ -51,7 +52,7 @@ header {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
-    font-family: OpenSans;
+    font-family: "Open Sans";
     font-size: 11px;
     font-style: normal;
     font-weight: 600;
