@@ -73,14 +73,14 @@
     }
     &__img-1 {
         @include imgFrame();
-        background-image: url(/img/plan.webp);
+        background-image: url(../img/plan.webp);
     }
     &__img-2 {
         @include imgFrame();
-        background-image: url(/img/manage.webp);
+        background-image: url(../img/manage.webp);
     }
     &__img-3 {
         @include imgFrame();
-        background-image: url(/img/build.webp);
+        background-image: url(../img/build.webp);
     }
 }

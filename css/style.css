@@ -319,7 +319,7 @@ nav .container {
   line-height: 29px;
   letter-spacing: 0.188px;
   text-transform: uppercase;
-  background-image: url(/img/plan.webp);
+  background-image: url(../img/plan.webp);
 }
 .about__img-2 {
   width: 140px;
@@ -334,7 +334,7 @@ nav .container {
   line-height: 29px;
   letter-spacing: 0.188px;
   text-transform: uppercase;
-  background-image: url(/img/manage.webp);
+  background-image: url(../img/manage.webp);
 }
 .about__img-3 {
   width: 140px;
@@ -349,7 +349,7 @@ nav .container {
   line-height: 29px;
   letter-spacing: 0.188px;
   text-transform: uppercase;
-  background-image: url(/img/build.webp);
+  background-image: url(../img/build.webp);
 }
 
 .services {
