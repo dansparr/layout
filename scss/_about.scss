@@ -3,7 +3,6 @@
     width: 140px;
     height: 224px;
     margin-left: 20px;
-    background-color: #00a4e5;
     padding: 20px;
 
     // Шрифт
@@ -74,14 +73,14 @@
     }
     &__img-1 {
         @include imgFrame();
-        background-image: url(/img/plan.jpg);
+        background-image: url(/img/plan.webp);
     }
     &__img-2 {
         @include imgFrame();
-        background-image: url(/img/manage.jpg);
+        background-image: url(/img/manage.webp);
     }
     &__img-3 {
         @include imgFrame();
-        background-image: url(/img/build.jpg);
+        background-image: url(/img/build.webp);
     }
 }

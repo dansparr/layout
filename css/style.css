@@ -310,7 +310,6 @@ nav .container {
   width: 140px;
   height: 224px;
   margin-left: 20px;
-  background-color: #00a4e5;
   padding: 20px;
   color: #fff;
   font-family: "Open Sans";
@@ -320,13 +319,12 @@ nav .container {
   line-height: 29px;
   letter-spacing: 0.188px;
   text-transform: uppercase;
-  background-image: url(/img/plan.jpg);
+  background-image: url(/img/plan.webp);
 }
 .about__img-2 {
   width: 140px;
   height: 224px;
   margin-left: 20px;
-  background-color: #00a4e5;
   padding: 20px;
   color: #fff;
   font-family: "Open Sans";
@@ -336,13 +334,12 @@ nav .container {
   line-height: 29px;
   letter-spacing: 0.188px;
   text-transform: uppercase;
-  background-image: url(/img/manage.jpg);
+  background-image: url(/img/manage.webp);
 }
 .about__img-3 {
   width: 140px;
   height: 224px;
   margin-left: 20px;
-  background-color: #00a4e5;
   padding: 20px;
   color: #fff;
   font-family: "Open Sans";
@@ -352,7 +349,7 @@ nav .container {
   line-height: 29px;
   letter-spacing: 0.188px;
   text-transform: uppercase;
-  background-image: url(/img/build.jpg);
+  background-image: url(/img/build.webp);
 }
 
 .services {
@@ -441,7 +438,7 @@ nav .container {
   background-position: left;
   background-repeat: no-repeat;
   background-color: #fff;
-  background-image: url(../img/c1.jpg);
+  background-image: url(../img/c1.webp);
 }
 .services__infographics-card-img_2 {
   width: 70px;
@@ -450,7 +447,7 @@ nav .container {
   background-position: left;
   background-repeat: no-repeat;
   background-color: #fff;
-  background-image: url(../img/c2.jpg);
+  background-image: url(../img/c2.webp);
 }
 .services__infographics-card-img_3 {
   width: 70px;
@@ -459,5 +456,5 @@ nav .container {
   background-position: left;
   background-repeat: no-repeat;
   background-color: #fff;
-  background-image: url(../img/c3.jpg);
+  background-image: url(../img/c3.webp);
 }
